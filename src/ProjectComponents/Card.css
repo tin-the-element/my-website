@@ -8,6 +8,12 @@
   /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 600px;
+    cursor: pointer;
+  }
+
+  .card:hover .cardLanguages{
+    display:inherit;
   }
   
   /* Add some padding inside the card container */
@@ -16,7 +22,17 @@
   }
 
   .classImg {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    border-style: solid;
+    border-width: 2px;
+  }
+  
+  .cardTitle {
+    font-size: 25px;
+  }
+
+  .cardLanguages {
+    display:none;
   }

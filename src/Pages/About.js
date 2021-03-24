@@ -15,9 +15,9 @@ class About extends Component {
         <motion.div style= {{marginTop:50}}>
             <Title />
             <div className={"AboutDiv"}>
-                <InfoBubble  title = {"Past Jobs"} description = {"Technology Chair at UCI Circle K"}/>
-                <InfoBubble  classes = {"bubbleCenter"} title = {"Current Education"} description = {"3rd Year at University of California, Irvine"}/>
-                <InfoBubble  title = {"Interests"} description = {"Tennis, Watching Soccer and Hockey, Video Games"}/>
+                <InfoBubble  title = {"Past Jobs"} description = {"Technology Chair at UCI Circle K, Assistant Tennis Coach at Vanguard Tennis"}/>
+                <InfoBubble  classes = {"bubbleCenter"} title = {"Current Education"} description = {"3rd Year Computer Science Major at the University of California, Irvine"}/>
+                <InfoBubble  title = {"Interests"} description = {"Tennis, Watching Soccer and Hockey, Video Games, Working Out"}/>
             </div>
         </motion.div>)
     }

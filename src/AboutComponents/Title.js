@@ -17,7 +17,7 @@ class Title extends Component {
             <h3>
                 Student Web Assistant
             </h3>
-            <h3>
+            <h3 style={{fontWeight:"normal"}}>
                 UCI Stem Cell Research Center
             </h3>
         </motion.div>)
