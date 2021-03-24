@@ -1,0 +1,11 @@
+.ProjectTitle{
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 30px
+}
+
+.ProjectsDiv {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

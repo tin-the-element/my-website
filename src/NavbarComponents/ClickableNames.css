@@ -1,0 +1,10 @@
+
+
+li {
+    display: inline;
+    float: right;
+    margin-right: 13vw;
+}
+li:hover {
+    text-decoration: underline;
+}

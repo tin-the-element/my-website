@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import { 
+  BrowserRouter as Router,
+  Route,
+  Link,
+  useNavigate,
+  Routes,
+  useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion'
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import Navbar from "./Pages/Navbar"
+import Projects from "./Pages/Projects"
+import PageNotFound from "./Pages/PageNotFound"
+import React, {Component, useState } from "react";
+
+function withMyHook(Component) {
+  return function WrappedComponet(props) {
+    const myHookValue = useLocation();
+    return <Component{...props} myHookValue={myHookValue} />;
+  }
 }
 
-export default App;
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+
+
+  render() {
+    const location = this.props.myHookValue;
+    return (
+      <>
+      <Navbar />
+      <AnimatePresence exitBeforeEnter>
+        <Routes location= {location} key={location.key}>
+          <Route exact path="/"><About /></Route>
+          <Route exact path="/Contact"><Contact /></Route>
+          <Route exact path="/Projects"><Projects /></Route>
+          <Route exact path="/PageNotFound"> <PageNotFound /> </Route>
+          <useNavigate to="/PageNotFound" />
+        </Routes>
+      </AnimatePresence>
+      </>
+    )
+  }
+}
+
+export default withMyHook(App);

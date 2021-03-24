@@ -1,0 +1,15 @@
+.bubbleTitle {
+    font-size: 50px;
+    text-align: center;
+}
+
+.bubbleDescription {
+    font-size: 25px;
+    text-align: center;
+}
+
+.bubble {
+    align-self: center;
+    width: 500px;
+    height: auto;
+}

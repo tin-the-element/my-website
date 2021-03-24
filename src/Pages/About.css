@@ -1,0 +1,11 @@
+.AboutDiv {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .AboutDiv {
+        flex-direction: column;
+    }
+}
