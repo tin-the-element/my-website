@@ -1,0 +1,18 @@
+.ContactTitle {
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 30px
+}
+
+.Contact {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.IconRef {
+    position:absolute;
+    bottom: 1%;
+    right: 1%;
+}

@@ -1,0 +1,143 @@
+.ContactInfoLink {
+    font-size: 35px;
+    
+}
+
+.ContactInfoImg {
+    height: 75px;
+    width: 75px;
+    display: block;
+    margin: auto;
+    margin-right: 30px;
+    margin-left: 20px;
+    
+}
+
+
+.ContactInfo:hover {
+    cursor: pointer;
+}
+.ContactInfo {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 2px;
+}
+
+
+
+.LinkedIn {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #0E76A8;
+    border-color: white;
+    color: white;
+}
+
+.LinkedIn:hover {
+    cursor: pointer;
+}
+
+.Github {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #2B414D;
+    border-color: white;
+    color: white;
+}
+
+.Github:hover {
+    cursor: pointer;
+}
+
+.Googleplus {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #DD4B39;
+    border-color: white;
+    color: white;
+}
+
+.Googleplus:hover {
+    cursor: pointer;
+}
+
+.Resume {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #2394BC;
+    border-color: white;
+    color: white;
+}
+
+.Resume:hover {
+    cursor: pointer;
+}
+
+.Instagram {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #3F729B;
+    border-color: white;
+    color: white;
+}
+
+.Instagram:hover {
+    cursor: pointer
+}
+
+.Facebook {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 800px;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    background-color: #3B5998;
+    border-color: white;
+    color: white;
+}
+
+.Facebook:hover {
+    cursor: pointer
+}
+
+
+
+
