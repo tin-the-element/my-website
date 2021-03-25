@@ -1,7 +1,7 @@
 .ContactTitle {
     text-align: center;
     font-size: 7vw;
-    margin-bottom: 30px
+    margin-bottom: 5px;
 }
 
 .Contact {
@@ -12,7 +12,7 @@
 }
 
 .IconRef {
-    position:absolute;
-    bottom: 1%;
-    right: 1%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
 }

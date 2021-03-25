@@ -46,6 +46,7 @@ class Contact extends Component {
             exit="exit"
         >
             <h1 className={"ContactTitle"}>Contact</h1>
+            <div className={"IconRef"}>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div className={"Contact"}>
                 <ContactInfo image={linkedin} secImage={linkedin2} class="LinkedIn" link={"https://www.linkedin.com/in/tin-trung-luu/"} text={"linkedin.com/in/tin-trung-luu/"}/>
                 <ContactInfo image={github} secImage={github2} class="Github" link={"https://github.com/tin-the-element"} text={"https://github.com/tin-the-element"}/>
@@ -54,7 +55,7 @@ class Contact extends Component {
                 <ContactInfo image={instagram} secImage={instagram2} class="Instagram" link={"https://www.instagram.com/tin_luuna/"} text={"https://www.instagram.com/tin_luuna/"}/>
                 <ContactInfo image={facebook} secImage={facebook2} class="Facebook" link={"https://www.facebook.com/tin.luu.925/"} text={"https://www.facebook.com/tin.luu.925/"}/>
             </div>
-            <div className={"IconRef"}>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            
         </motion.div>)
     }
 }

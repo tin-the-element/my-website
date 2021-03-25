@@ -1,6 +1,8 @@
 .ContactInfoLink {
     font-size: 35px;
-    
+    display: block;
+    margin: auto;
+    margin-left: 0px;
 }
 
 .ContactInfoImg {
@@ -18,6 +20,8 @@
     cursor: pointer;
 }
 .ContactInfo {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,6 +35,8 @@
 
 
 .LinkedIn {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -49,6 +55,8 @@
 }
 
 .Github {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -67,6 +75,8 @@
 }
 
 .Googleplus {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -85,6 +95,8 @@
 }
 
 .Resume {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -103,6 +115,8 @@
 }
 
 .Instagram {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -121,6 +135,8 @@
 }
 
 .Facebook {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
