@@ -21,9 +21,30 @@ class Contact extends Component {
         this.state = {}
     }
 
+    containerVariants = {
+        hidden: {
+          x: "100vh",
+          opacity: 0,
+        },
+        visible: {
+          x: "0",
+          opacity: 1,
+          transition: { duration: 1}
+        },
+        exit: {
+          x: "100vh",
+          opacity: 0, 
+          transition: { ease: 'easeInOut', duration: 1, opacity: 0}
+        }
+      }
+
     render() {
         return (
-        <motion.div>
+        <motion.div variants={this.containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
             <h1 className={"ContactTitle"}>Contact</h1>
             <div className={"Contact"}>
                 <ContactInfo image={linkedin} secImage={linkedin2} class="LinkedIn" link={"https://www.linkedin.com/in/tin-trung-luu/"} text={"linkedin.com/in/tin-trung-luu/"}/>

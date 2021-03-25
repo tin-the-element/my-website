@@ -13,11 +13,32 @@ class Projects extends Component {
         this.state = {}
     }
 
+    containerVariants = {
+        hidden: {
+          x: "100vh",
+          opacity: 0,
+        },
+        visible: {
+          x: "0",
+          opacity: 1,
+          transition: { duration: 1}
+        },
+        exit: {
+          x: "-100vh",
+          opacity: 0, 
+          transition: { ease: 'easeInOut', duration: 1, opacity: 0}
+        }
+      }
+
     render() {
         return (
-        <motion.div>
+        <motion.div variants={this.containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
             <h1 className={"ProjectTitle"}>Projects</h1>
-            <h3 className={"ProjectDescription"}><a href="https://github.com/tin-the-element">Github</a></h3>
+            
             <motion.div className={"ProjectsDiv"}>
                 <Card 
                 title={"melloweather"} 
@@ -38,6 +59,7 @@ class Projects extends Component {
                 languages={"Python, Tkinter, Spotipy"}
                 website={"https://github.com/tin-the-element/Heize-Song-Recommender"}/>
             </motion.div>
+            <h3 className={"ProjectDescription"}><a href="https://github.com/tin-the-element">Click Here for More Projects!</a></h3>
         </motion.div>)
     }
 }

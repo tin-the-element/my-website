@@ -5,7 +5,7 @@ import {
   Route,
   Link,
   useNavigate,
-  Routes,
+  Switch,
   useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion'
 import About from "./Pages/About"
@@ -37,13 +37,13 @@ class App extends Component {
       <>
       <Navbar />
       <AnimatePresence exitBeforeEnter>
-        <Routes location= {location} key={location.key}>
+        <Switch location= {location} key={location.key}>
           <Route exact path="/"><About /></Route>
           <Route exact path="/Contact"><Contact /></Route>
           <Route exact path="/Projects"><Projects /></Route>
           <Route exact path="/PageNotFound"> <PageNotFound /> </Route>
           <useNavigate to="/PageNotFound" />
-        </Routes>
+        </Switch>
       </AnimatePresence>
       </>
     )
