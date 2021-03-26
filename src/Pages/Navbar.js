@@ -15,6 +15,7 @@ class Navbar extends Component {
         <motion.div className={"Navbar"}>
             <ColorSelector />
             <ClickableNames />
+            
         </motion.div>)
     }
 }

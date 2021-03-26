@@ -8,9 +8,30 @@ class Title extends Component {
         this.state = {}
     }
 
+    containerVariants = {
+        hidden: {
+          x: "-100vh",
+          opacity: 0,
+        },
+        visible: {
+          x: "0",
+          opacity: 1,
+          transition: { type:'tween', duration: 1}
+        },
+        exit: {
+          x: "-100vh",
+          opacity: 0, 
+          transition: {ease: 'easeInOut', duration: 1, opacity: 0}
+        }
+      }
+
     render() {
         return (
-        <motion.div>
+        <motion.div  variants={this.containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        >
             <h1>
                 Tin Luu
             </h1>

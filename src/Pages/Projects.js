@@ -36,7 +36,7 @@ class Projects extends Component {
             initial="hidden"
             animate="visible"
             exit="exit"
-        >
+            >
             <h1 className={"ProjectTitle"}>Projects</h1>
             
             <motion.div className={"ProjectsDiv"}>

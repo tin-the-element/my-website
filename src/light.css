@@ -1,0 +1,8 @@
+body {
+    color: black;
+    background: linear-gradient(90deg, rgba(35,15,73,1) 36%, rgba(86,13,163,1) 80%);
+  }
+  
+  li {
+    color: black;
+  }

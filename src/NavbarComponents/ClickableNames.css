@@ -4,7 +4,9 @@ li {
     display: inline;
     float: right;
     margin-right: 13vw;
+    font-size: 20px
 }
 li:hover {
+    
     text-decoration: underline;
 }

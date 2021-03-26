@@ -44,7 +44,7 @@ class Contact extends Component {
             initial="hidden"
             animate="visible"
             exit="exit"
-        >
+            className={this.props.class}>
             <h1 className={"ContactTitle"}>Contact</h1>
             <div className={"IconRef"}>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             <div className={"Contact"}>
