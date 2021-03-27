@@ -1,7 +1,5 @@
 import { Component } from "react";
 import {motion} from 'framer-motion'
-import Title from '../AboutComponents/Title'
-import InfoBubble from '../AboutComponents/ InfoBubble'
 import "./About.css"
 import "../App.css"
 
