@@ -10,9 +10,9 @@ import {
 import { AnimatePresence } from 'framer-motion'
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
-import Navbar from "./Pages/Navbar"
 import Projects from "./Pages/Projects"
 import PageNotFound from "./Pages/PageNotFound"
+import Experience from "./Pages/Experience"
 import React, {Component, useState } from "react";
 
 function withMyHook(Component) {
@@ -69,19 +69,21 @@ class App extends Component {
     return (
       <div className={nav_theme}>
       <>
+        
         <div className={"Navbar"}>
             <div>
                 <span id={"Light"} onClick={() => this.setColor('Light', 'linear-gradient(90deg, rgba(221,223,223,1) 36%, rgba(255,255,255,1) 80%)', 'NavDark')} className={"Circle CircleDark"}></span>
                 <span id={"Dark"} onClick={() => this.setColor('Dark', 'linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(45,45,45,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
                 <span id={"Pink"} onClick={() => this.setColor('Pink', 'linear-gradient(90deg, rgba(194,131,198,1) 36%, rgba(247,201,242,1) 80%)', 'NavDark')} className={"Circle CircleDark"}></span>
                 <span id={"Blue"} onClick={() => this.setColor('Blue', 'linear-gradient(90deg, rgba(61,79,240,1) 36%, rgba(94,145,245,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
-                <span id={"idk"} onClick={() => this.setColor('idk', 'linear-gradient(90deg, rgba(35,15,73,1) 36%, rgba(86,13,163,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
+                <span id={"idk"} onClick={() => this.setColor('idk', 'linear-gradient(90deg, rgba(15,12,99,1) 22%, rgba(86,13,163,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
             </div>
             <div>
               <ul >
-                  <Link to = "/Contact"><li className={nav_theme}>Contact</li></Link>
-                  <Link to = "/Projects"><li className={nav_theme}>Projects</li></Link>
-                  <Link to = "/"><li className={nav_theme}>About</li></Link>
+                  <Link to = "/Contact"><li className={nav_theme + " navbar_li"}>Contact</li></Link>
+                  <Link to = "/Experience"><li className={nav_theme + " navbar_li"}>Experience</li></Link>
+                  <Link to = "/Projects"><li className={nav_theme + " navbar_li"}>Projects</li></Link>
+                  <Link to = "/"><li className={nav_theme + " navbar_li"}>About</li></Link>
 
               </ul>
           </div>
@@ -92,6 +94,7 @@ class App extends Component {
           <Route exact path="/"><About /></Route>
           <Route exact path="/Contact"><Contact /></Route>
           <Route exact path="/Projects"><Projects /></Route>
+          <Route exact path="/Experience"><Experience /></Route>
           <Route exact path="/PageNotFound"> <PageNotFound /> </Route>
           <useNavigate to="/PageNotFound" />
         </Switch>

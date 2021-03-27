@@ -1,7 +1,8 @@
 .ProjectTitle{
     text-align: center;
     font-size: 7vw;
-    margin-bottom: 30px
+    margin-bottom: 0px;
+    color: inherit;
 }
 
 .ProjectsDiv {
@@ -9,4 +10,13 @@
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
+    flex-wrap: wrap;
+}
+
+.MoreProjects {
+    height: 85px;
+    width: 75px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
 }

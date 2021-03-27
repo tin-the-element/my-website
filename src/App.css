@@ -1,29 +1,23 @@
 
-.Light {
-  color: black;
-  background: linear-gradient(90deg, rgba(221,223,223,1) 36%, rgba(255,255,255,1) 80%);
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;500');
+@import url('https://use.typekit.net/seb8wka.css');
+Roboto Slab
+body {
+  color: inherit;
+  background: transparent;
+  font-family: 'Nunito';
 }
 
-.Dark {
-  color: white;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(45,45,45,1) 80%);
+
+h1 {
+  font-family: utile-narrow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.Pink {
-  color: black;
-  background: linear-gradient(90deg, rgba(194,131,198,1) 36%, rgba(247,201,242,1) 80%);
-}
-
-.Blue {
-  color: white;
-  background: linear-gradient(90deg, rgba(61,79,240,1) 36%, rgba(94,145,245,1) 80%);
-}
-
-.Purple {
-  color: white;
-  background: linear-gradient(90deg, rgba(35,15,73,1) 36%, rgba(86,13,163,1) 80%);
-
-}
+/* Start of all NAVBAR STUFF*/
 
 .NavLight {
   color: white;
@@ -33,7 +27,86 @@
   color: black;
 }
 
-body {
-  color: inherit;
-  background: transparent;
+
+.Navbar {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.Circle {
+  height: 40px;
+  width: 40px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.CircleDark:hover {
+  border: 2px solid black;
+}
+
+.CircleLight:hover {
+  border: 2px solid white;
+}
+
+.Circle:hover {
+  cursor: pointer;
+}
+
+.SelectedDark {
+  border: 2px solid black;
+}
+
+.SelectedDark:hover {
+  cursor: initial;
+}
+
+.SelectedLight {
+  border: 2px solid white;
+}
+
+.SelectedLight:hover {
+  cursor: initial;
+}
+
+#Light {
+  background: linear-gradient(90deg, rgba(221,223,223,1) 36%, rgba(255,255,255,1) 80%);
+}
+
+#Dark {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(45,45,45,1) 80%);
+}
+
+#Pink {
+  background: linear-gradient(90deg, rgba(194,131,198,1) 36%, rgba(247,201,242,1) 80%);
+
+}
+
+#Blue {
+  background: linear-gradient(90deg, rgba(61,79,240,1) 36%, rgba(94,145,245,1) 80%);
+}
+
+#idk {
+  background: linear-gradient(90deg, rgba(15,12,99,1) 22%, rgba(86,13,163,1) 80%);
+}
+
+.navbar_li {
+  display: inline;
+  float: right;
+  margin-right: 13vw;
+  font-size: 20px
+}
+
+.navbar_li:hover {
+  text-decoration: underline;
+}
+
+
+

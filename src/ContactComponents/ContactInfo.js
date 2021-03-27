@@ -27,7 +27,7 @@ class ContactInfo extends Component {
             <motion.div className={"ContactInfo"} onClick={this.LinkToSite} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
                 <object type="image/svg+xml" data={this.props.image} className={"ContactInfoImg"} style={{pointerEvents:'none'}}>
                 </object>
-                <h1 className={"ContactInfoLink"}>{this.props.text}</h1>
+                <h3 className={"ContactInfoLink"}>{this.props.text}</h3>
             </motion.div>)
             
         } else {
@@ -36,7 +36,7 @@ class ContactInfo extends Component {
                 <object type="image/svg+xml" data={this.props.secImage} className={"ContactInfoImg"} style={{pointerEvents:'none'}}>
 
                 </object>
-                <h1 className={"ContactInfoLink"}>{this.props.text}</h1>
+                <h3 className={"ContactInfoLink"}>{this.props.text}</h3>
             </motion.div>)
         }
     }

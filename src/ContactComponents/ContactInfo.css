@@ -6,12 +6,12 @@
 }
 
 .ContactInfoImg {
-    height: 75px;
+    height: 85px;
     width: 75px;
     display: block;
     margin: auto;
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     
 }
 
@@ -20,16 +20,16 @@
     cursor: pointer;
 }
 .ContactInfo {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
+    border-width: 4px;
     background-color: white;
     color: black
 }
@@ -37,16 +37,15 @@
 
 
 .LinkedIn {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #0E76A8;
     border-color: white;
     color: white;
@@ -57,16 +56,15 @@
 }
 
 .Github {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #2B414D;
     border-color: white;
     color: white;
@@ -77,16 +75,15 @@
 }
 
 .Googleplus {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #DD4B39;
     border-color: white;
     color: white;
@@ -97,16 +94,15 @@
 }
 
 .Resume {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #2394BC;
     border-color: white;
     color: white;
@@ -117,16 +113,15 @@
 }
 
 .Instagram {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #3F729B;
     border-color: white;
     color: white;
@@ -137,16 +132,15 @@
 }
 
 .Facebook {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 800px;
     margin-top: 40px;
     border-style: solid;
-    border-radius: 25px;
-    border-width: 2px;
+    border-radius: 70px;
     background-color: #3B5998;
     border-color: white;
     color: white;

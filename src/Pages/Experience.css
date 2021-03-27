@@ -1,0 +1,13 @@
+.ExperienceTitle {
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 30px
+}
+
+.ExperienceDiv {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    
+}
