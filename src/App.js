@@ -71,7 +71,7 @@ class App extends Component {
       <>
         
         <div className={"Navbar"}>
-            <div>
+            <div className={"colors_ul"}>
                 <span id={"Light"} onClick={() => this.setColor('Light', 'linear-gradient(90deg, rgba(221,223,223,1) 36%, rgba(255,255,255,1) 80%)', 'NavDark')} className={"Circle CircleDark"}></span>
                 <span id={"Dark"} onClick={() => this.setColor('Dark', 'linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(45,45,45,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
                 <span id={"Pink"} onClick={() => this.setColor('Pink', 'linear-gradient(90deg, rgba(194,131,198,1) 36%, rgba(247,201,242,1) 80%)', 'NavDark')} className={"Circle CircleDark"}></span>
@@ -79,7 +79,7 @@ class App extends Component {
                 <span id={"idk"} onClick={() => this.setColor('idk', 'linear-gradient(90deg, rgba(15,12,99,1) 22%, rgba(86,13,163,1) 80%)', 'NavLight')} className={"Circle CircleLight"}></span>
             </div>
             <div>
-              <ul >
+              <ul className={"navbar_ul"}>
                   <Link to = "/Contact"><li className={nav_theme + " navbar_li"}>Contact</li></Link>
                   <Link to = "/Experience"><li className={nav_theme + " navbar_li"}>Experience</li></Link>
                   <Link to = "/Projects"><li className={nav_theme + " navbar_li"}>Projects</li></Link>

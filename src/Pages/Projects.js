@@ -34,7 +34,9 @@ function Projects(){
           exit="exit"
           >
           <h1 className={"ProjectTitle"}>PROJECTS</h1>
-          <a href="https://github.com/tin-the-element"><object type="image/svg+xml" aria-label="My Github" data={github} className={"MoreProjects"} style={{pointerEvents:'none'}}></object></a>
+
+          <div className={"IconRef"}>For more projects visit my  <a href="https://github.com/tin-the-element" title="Pixel Buddha">Github!</a></div>
+
           <motion.div className={"ProjectsDiv"}>
               <Card 
               title={"melloweather"} 
