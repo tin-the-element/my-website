@@ -16,7 +16,7 @@ function Experience(){
         visible: {
           x: "0",
           opacity: 1,
-          transition: { duration: 1}
+          transition: { ease: 'easeInOut', duration: .7}
         },
         exit: {
           x: "-100vh",

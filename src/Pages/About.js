@@ -13,12 +13,12 @@ function About() {
     visible: {
       x: "0",
       opacity: 1,
-      transition: { type:'tween', duration: 1}
+      transition: { ease: 'easeInOut', duration: .7}
     },
     exit: {
       x: "-100vh",
       opacity: 0, 
-      transition: {ease: 'easeInOut', duration: 1, opacity: 0}
+      transition: {ease: 'easeInOut', duration: .85, opacity: 0}
     }
   }
 

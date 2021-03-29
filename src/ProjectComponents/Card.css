@@ -5,6 +5,7 @@
     width: 400px;
     background-color: white;
     color: black;
+    will-change: transform, box-shadow, z-index;
     
   }
   
