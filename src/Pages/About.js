@@ -1,5 +1,6 @@
 import { Component } from "react";
 import {motion} from 'framer-motion'
+import Me from '../imgs/Me.jpg'
 import "./About.css"
 import "../App.css"
 
@@ -28,18 +29,25 @@ function About() {
       animate="visible"
       exit="exit"
       >
-          <h1>
-              TIN LUU
-          </h1>
-          <h3>
-              Student Web Assistant
-          </h3>
-          <h3 style={{fontWeight:"normal"}}>
-              UCI Stem Cell Research Center
-          </h3>
-          <h3 style={{fontWeight:"normal", marginTop:"80px"}}>
-              3rd Year Computer Science Student at the University of California, Irvine
-          </h3>
+        <div className="AboutDiv">
+            <div className="personal_blurb">
+
+            <img className='personal_image' alt="Tin Luu" src={Me}></img>  
+
+            <h3 className="personal_text">
+              Hello, my name is Tin Luu and I am a 4th year Computer Science major at the University of California, Irvine.
+            </h3>
+            {/* <h3>
+                Student Web Assistant
+            </h3>
+            <h3 style={{fontWeight:"normal"}}>
+                UCI Stem Cell Research Center
+            </h3>
+            <h3 style={{fontWeight:"normal", marginTop:"80px"}}>
+                4th Year Computer Science Student at the University of California, Irvine
+            </h3> */}
+            </div>
+          </div>
       </motion.div>)
 }
 

@@ -19,13 +19,51 @@
   .card:hover .cardLanguages{
     display:inherit;
   }
+
+  @keyframes classImg1Transition {
+    0% {opacity: 1}
+    32% {opacity: 1}
+    33% {opacity: 0}
+    100% {opacity: 0}
+  }
+
+  @keyframes classImg2Transition {
+    0% {opacity: 0}
+    32% {opacity: 0}
+    33% {opacity: 1}
+    65% { opacity: 1}
+    66% {opacity: 0}
+    100% {opacity: 0}
+  }
+
+  @keyframes classImg3Transition {
+    0% {opacity: 0}
+    65% {opacity: 0;}
+    66% {opacity: 1}
+    100% {opacity: 1}
+  }
+
+  .card:hover .classImg1 {
+    animation: 3s linear infinite classImg1Transition;
+  }
+
+  .card:hover .classImg2 {
+    animation: 3s linear infinite classImg2Transition;
+  }
+
+  .card:hover .classImg3 {
+    animation: 3s linear infinite classImg3Transition;
+  }
+
   
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
 
-  .classImg {
+  .classImg1 {
+    position: absolute;
+    opacity: 0;
     height: auto;
     width: 100%;
     object-fit: contain;
@@ -35,6 +73,34 @@
     border-style: solid;
     border-width: 2px;
     border-color: inherit;
+  }
+
+  .classImg2 {
+    position: absolute;
+    opacity: 0;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: inherit;
+  }
+
+  .classImg3 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: inherit;
+
   }
   
   .cardTitle {

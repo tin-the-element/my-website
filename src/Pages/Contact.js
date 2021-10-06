@@ -45,8 +45,8 @@ function Contact() {
               <ContactInfo image={github} secImage={github2} class="Github" link={"https://github.com/tin-the-element"} text={"https://github.com/tin-the-element"}/>
               <ContactInfo image={googleplus} secImage={googleplus2} class="Googleplus" link={"mailto:trungtin.luu@gmail.com"} text={"trungtin.luu@gmail.com"}/>
               <ContactInfo image={download} secImage={download2} class="Resume" link={"https://drive.google.com/uc?export=download&id=1EE48mgto7-LWugPkoAmDBcSfHcjoq1AC"} text={"Download my Resume!"}/>
-              <ContactInfo image={instagram} secImage={instagram2} class="Instagram" link={"https://www.instagram.com/tin_luuna/"} text={"https://www.instagram.com/tin_luuna/"}/>
-              <ContactInfo image={facebook} secImage={facebook2} class="Facebook" link={"https://www.facebook.com/tin.luu.925/"} text={"https://www.facebook.com/tin.luu.925/"}/>
+              {/* <ContactInfo image={instagram} secImage={instagram2} class="Instagram" link={"https://www.instagram.com/tin_luuna/"} text={"https://www.instagram.com/tin_luuna/"}/>
+              <ContactInfo image={facebook} secImage={facebook2} class="Facebook" link={"https://www.facebook.com/tin.luu.925/"} text={"https://www.facebook.com/tin.luu.925/"}/> */}
           </div>
           
       </motion.div>)
