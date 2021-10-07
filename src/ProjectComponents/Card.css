@@ -127,4 +127,8 @@
       width: 400px;
       cursor: pointer;
     }
+
+    .cardLanguages {
+      display: inherit
+    }
   }

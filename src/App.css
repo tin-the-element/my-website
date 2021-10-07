@@ -7,12 +7,13 @@ Roboto Slab
 body {
   color: inherit;
   background: transparent;
-  font-family: 'Nunito';
+  font-family: 'Nunito', sans-serif, serif;
+  border-color: white;
 }
 
 
 h1 {
-  font-family: utile-narrow,sans-serif;
+  font-family: utile-narrow,sans-serif, serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -21,9 +22,21 @@ h1 {
 
 .NavLight {
   color: white;
+  /* border: 2px solid white !important; */
 }
 
+
+
+.NavLight a {
+  color: white;
+}
+
+
 .NavDark {
+  color: black;
+}
+
+.NavDark a {
   color: black;
 }
 

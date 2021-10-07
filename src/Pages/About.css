@@ -2,15 +2,49 @@
 
 .AboutDiv {
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 600px;
+}
+.AboutTitle {
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 5px;
+}
+
+.personal_info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basic_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info_bubble {
+   
+    border-radius: 0;
+    border: 2px solid black;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+
+    text-align: center;
+    width: 250px;
+    height: 250px
 }
 
 .personal_blurb {
     border: 1px solid black;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 70%;
@@ -21,6 +55,7 @@
 .personal_image {
     width: 200px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 .personal_text {
