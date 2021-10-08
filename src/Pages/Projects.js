@@ -1,7 +1,11 @@
-import { Component } from "react";
+import { Component, useEffect } from "react";
 import {motion} from 'framer-motion'
 import "./Projects.css"
 import Card from "../ProjectComponents/Card"
+
+import PokemonIRL3 from '../imgs/PokemonIRL3.png'
+import PokemonIRL2 from '../imgs/PokemonIRL2.png'
+import PokemonIRL1 from '../imgs/PokemonIRL1.png'
 import melloweather3 from '../imgs/melloweather3.png'
 import melloweather2 from '../imgs/melloweather2.png'
 import melloweather1 from '../imgs/melloweather1.png'
@@ -11,6 +15,7 @@ import HeizeSongRecommender1 from '../imgs/HeizeSongRecommender1.png'
 import UciCircleK3 from '../imgs/UciCircleK3.png'
 import UciCircleK2 from '../imgs/UciCircleK2.png'
 import UciCircleK1 from '../imgs/UciCircleK1.png'
+import { useState } from "react";
 
 
 
@@ -19,6 +24,11 @@ import github2 from "../svgs/github2.svg"
 
 
 function Projects(){
+    const [pagination, setPagination] = useState(1)
+
+    useEffect(() => {
+
+    })
     var containerVariants = {
         hidden: {
           x: "100vh",
@@ -43,10 +53,19 @@ function Projects(){
           exit="exit"
           >
           <h1 className={"ProjectTitle"}>PROJECTS</h1>
-
+          {/* <div className={"IconRef"}>Hover a card for more information!</div> */}
           <div className={"IconRef"}>For more projects visit my  <a href="https://github.com/tin-the-element" title="Pixel Buddha">Github!</a></div>
-
+          {pagination === 1 ? 
           <motion.div className={"ProjectsDiv"}>
+              <Card 
+              title={"Pokemon IRL"} 
+              image1={PokemonIRL1} 
+              image2={PokemonIRL2}
+              image3={PokemonIRL3}
+              description={"Pokemon game where you can adopt Pokemon to complete real-world like tasks"} 
+              languages={"React JS, HTML, Sass, GraphQL, AWS Appsync"}
+              website={"https://melloweather.herokuapp.com"}
+              />
               <Card 
               title={"melloweather"} 
               image1={melloweather1} 
@@ -64,20 +83,35 @@ function Projects(){
               description={"Club Website for the Largest Circle K in the world"} 
               languages={"HTML, CSS, PHP, Javascript, Bootstrap"}
               website={"https://www.ucicirclek.com"}/>
-              <Card title={"Heize Song Recommender"} 
-              image1={HeizeSongRecommender1} 
-              image2={HeizeSongRecommender2}
-              image3={HeizeSongRecommender3}
-              description={"Recommends Heize songs based on your inputted songs"} 
-              languages={"Python, Tkinter, Spotipy"}
-              website={"https://github.com/tin-the-element/Heize-Song-Recommender"}/>
+              
 
 {/* <Card title={"Heize Song Recommender"} 
               image={HeizeSongRecommender3} 
               description={"Recommends Heize songs based on your inputted songs"} 
               languages={"Python, Tkinter, Spotipy"}
               website={"https://github.com/tin-the-element/Heize-Song-Recommender"}/> */}
-          </motion.div>
+          </motion.div> : 
+            <motion.div className={"ProjectsDiv"}>
+             <Card title={"Heize Song Recommender"} 
+              image1={HeizeSongRecommender1} 
+              image2={HeizeSongRecommender2}
+              image3={HeizeSongRecommender3}
+              description={"Recommends Heize songs based on your inputted songs"} 
+              languages={"Python, Tkinter, Spotipy"}
+              website={"https://github.com/tin-the-element/Heize-Song-Recommender"}/>
+           
+
+{/* <Card title={"Heize Song Recommender"} 
+            image={HeizeSongRecommender3} 
+            description={"Recommends Heize songs based on your inputted songs"} 
+            languages={"Python, Tkinter, Spotipy"}
+            website={"https://github.com/tin-the-element/Heize-Song-Recommender"}/> */}
+        </motion.div>
+        }
+        <div className="pagination">
+          <div onClick={() => setPagination(1)} className="pagination_block"><p className="pagination_q">&lsaquo;</p></div>
+          <div onClick={() => setPagination(2)} className="pagination_block"><p className="pagination_q">&rsaquo;</p></div>
+        </div>
           
       </motion.div>)
 }

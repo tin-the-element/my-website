@@ -29,12 +29,22 @@ function About() {
       animate="visible"
       exit="exit"
       >
+        <h1 className={"AboutTitle"}>ABOUT</h1>
         <div className="AboutDiv">
-          <h1 className={"AboutTitle"}>ABOUT</h1>
+          
             <div className="personal_blurb">
               <img className='personal_image' alt="Tin Luu" src={Me}></img>
               <div className="basic_info">
-                <div className="info_bubble">
+                <p className="basic_info_text">Hello, my name is Tin Luu, and I'm a 4th Year Computer Science Major at the University of California, Irvine.</p>
+                <p className="basic_info_text">
+                  In the computer science industry, my main interests are in Web Developement and Mobile Developement. I enjoy working on projects that 
+                  can make a positive impact in the world and on my skills as a software developer. I am constantly working on new projects to learn more
+                  technologies and to grow as a developer. 
+                </p>
+                <p className="basic_info_text">
+                Thank you for taking the time to look around my website!
+                </p>
+                {/* <div className="info_bubble">
                   <h3>Basic Info</h3>
                   <p>Name: Tin Luu</p>
                   <p>Year: 4th Year</p>
@@ -48,7 +58,7 @@ function About() {
                 <div className="info_bubble">
                   <h3>Most Known Langauges</h3>
                   <p>React, React Native, HTML, CSS, Javascript, Python</p>
-                </div>
+                </div> */}
               </div>
 
             </div>

@@ -36,7 +36,7 @@ function Experience(){
               image={UCI}
               position={"Student Web Assistant"} 
               company={"UCI Stem Cell Research Center"} 
-              date = {"Feb 2021 - Current"}
+              date = {"Feburary 2021 - September 2021"}
               first_bullet={"Overseeing three websites while maintaining and improving the usability of each website"} 
               second_bullet={"Using HTML, CSS, and Javascript to maintain and update the website"}
               third_bullet={"Cooperating with other communication assistants to publicize news and events to people of all ages and professions"}

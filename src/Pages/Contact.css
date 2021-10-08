@@ -1,13 +1,14 @@
 .ContactTitle {
     text-align: center;
     font-size: 7vw;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 .Contact {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 

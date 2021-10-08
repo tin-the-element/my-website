@@ -43,7 +43,7 @@ h1 {
 
 .Navbar {
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   display:flex;
   flex-direction: row;
   justify-content: space-around;
