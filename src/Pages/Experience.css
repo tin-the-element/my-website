@@ -12,3 +12,45 @@
     height: 100%;
     
 }
+
+.paginationExperience {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0em;
+    height: 100%;
+    margin-bottom: 30px
+}
+
+.pagination_block {
+    font-size: 50px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    color: black;
+}
+
+.pagination_block_disabled {
+    font-size: 50px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    opacity: .4;
+}
+
+.pagination_block_disabled:hover {
+    cursor:not-allowed
+}
+
+.pagination_q {
+    margin: 0 15px 0 15px;
+   
+}
+
+.pagination_block:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

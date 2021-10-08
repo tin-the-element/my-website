@@ -25,8 +25,8 @@
   }
 
   .HoricardImg {
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 250px;
     object-fit: contain;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

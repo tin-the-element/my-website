@@ -20,9 +20,21 @@
     border: 2px solid black;
     margin-left: 20px;
     margin-right: 20px;
-    
     background-color: white;
     color: black;
+}
+
+.pagination_block_disabled {
+    font-size: 50px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    opacity: .4;
+}
+
+.pagination_block_disabled:hover {
+    cursor:not-allowed
 }
 
 .pagination_q {

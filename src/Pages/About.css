@@ -90,8 +90,12 @@ h3 {
     }
 }
 
-@media (max-width: 800px) {
-    .AboutDiv {
+@media (max-width: 1000px) {
+    .personal_blurb {
         flex-direction: column;
+    }
+
+    .personal_image {
+        margin-right: 0
     }
 }

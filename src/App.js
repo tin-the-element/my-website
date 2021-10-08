@@ -5,6 +5,7 @@ import {
   Route,
   Link,
   useNavigate,
+  Redirect,
   Switch,
   useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion'
@@ -95,6 +96,14 @@ class App extends Component {
           <Route exact path="/Contact"><Contact /></Route>
           <Route exact path="/Projects"><Projects /></Route>
           <Route exact path="/Experience"><Experience /></Route>
+          <Route
+                path="/"
+                render={() => {
+                    return (
+                      <Redirect to="/" /> 
+                    )
+                }}
+              />
           <Route exact path="/PageNotFound"> <PageNotFound /> </Route>
           <useNavigate to="/PageNotFound" />
         </Switch>

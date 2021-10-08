@@ -26,6 +26,25 @@ import github2 from "../svgs/github2.svg"
 function Projects(){
     const [pagination, setPagination] = useState(1)
 
+    function pageOne() {
+      setPagination(1)
+      document.getElementById("one").classList.remove("pagination_block")
+      document.getElementById("one").classList.add("pagination_block_disabled")
+
+      document.getElementById("two").classList.add("pagination_block")
+      document.getElementById("two").classList.remove("pagination_block_disabled")
+
+    }
+
+    function pageTwo() {
+      setPagination(2)
+      document.getElementById("two").classList.remove("pagination_block")
+      document.getElementById("two").classList.add("pagination_block_disabled")
+
+      document.getElementById("one").classList.add("pagination_block")
+      document.getElementById("one").classList.remove("pagination_block_disabled")
+    }
+
     useEffect(() => {
 
     })
@@ -109,8 +128,8 @@ function Projects(){
         </motion.div>
         }
         <div className="pagination">
-          <div onClick={() => setPagination(1)} className="pagination_block"><p className="pagination_q">&lsaquo;</p></div>
-          <div onClick={() => setPagination(2)} className="pagination_block"><p className="pagination_q">&rsaquo;</p></div>
+          <div id="one" onClick={() => pageOne()} className="pagination_block_disabled"><p className="pagination_q">&lsaquo;</p></div>
+          <div id="two" onClick={() => pageTwo()} className="pagination_block"><p className="pagination_q">&rsaquo;</p></div>
         </div>
           
       </motion.div>)
