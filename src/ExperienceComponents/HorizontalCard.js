@@ -15,7 +15,7 @@ class HorizontalCard extends Component {
     render() {
         return (
         <motion.div className={"Horicard"}>
-            <img className={"HoricardImg"} src={this.props.image} alt={this.props.title}></img>
+            <img className={"HoricardImg"} src={this.props.image} alt={this.props.company + " Icon"}></img>
             <div className={"container"}>
                 <h4 className={"HoricardPosition"}><b>{this.props.position}</b></h4>
                 <h6 className={"HoricardCompany"}>{this.props.company}</h6>
