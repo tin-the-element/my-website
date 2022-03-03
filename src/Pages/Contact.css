@@ -1,20 +1,20 @@
 .ContactTitle {
-    text-align: center;
-    font-size: 7vw;
-    margin-bottom: 30px;
-    text-decoration: underline;
+  text-align: center;
+  font-size: 7vw;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
 .Contact {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
 }
 
 .IconRef {
-    position: relative;
-    text-align: center;
-    margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
 }
